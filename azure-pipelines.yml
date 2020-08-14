@@ -15,9 +15,9 @@ variables:
 steps:
 - script: dotnet build --configuration $(buildConfiguration)
   displayName: 'dotnet build $(buildConfiguration)'
-
+-task: 
 - task: AzureWebApp@1
   inputs:
-    azureSubscription: 'Test Pipeline connection'
+    azureSubscription: 'Azure subscription EF'
     appName: 'pipetestapp'
     package: $(System.DefaultWorkingDirectory)/**/*.zip
