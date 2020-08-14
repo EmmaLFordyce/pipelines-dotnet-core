@@ -19,5 +19,5 @@ steps:
 - task: AzureWebApp@1
   inputs:
     azureSubscription: 'Test Pipeline connection'
-    appName: 'EFAppServicePlan'
+    appName: 'pipetestapp'
     package: $(System.DefaultWorkingDirectory)/**/*.zip
