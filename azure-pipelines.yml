@@ -32,4 +32,4 @@ steps:
   inputs:
     azureSubscription: 'Test Pipeline connection'
     appName: 'pipetestapp'
-    package: $(System.ArtifactStagingDirectory)/*.zip
+    package: $(System.DefaultWorkingDirectory)/*.zip
