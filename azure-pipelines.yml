@@ -19,4 +19,4 @@ steps:
   inputs:
     azureSubscription: 'Test Pipeline connection'
     appName: 'pipetestapp'
-    package: $(System.DefaultWorkingDirectory)/**/*.zip
+    package: $(System.DefaultWorkingDirectory)/bin/Release/netcoreapp2.2/*.zip  $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
